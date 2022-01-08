@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        color: red;
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(2, 154, 255), 0 0 5px rgb(97, 255, 6);
+    }
+    
+    .main {
+        display: flex;
+        margin: 50px 100px;
+        padding: 30px;
+        border: blue 3px solid;
+        border-color: #fff red rgb(0, 89, 255) rgb(255, 0, 0);
+        border-radius: 10px;
+        background-image: linear-gradient(rgb(255, 255, 255), rgba(92, 176, 255, 0.993)), url('../../img/login0.jpg');
+    }
+    
+    .main1 {
+        margin-right: 100px;
+    }
+    
+    h2 {
+        color: blue;
+    }
+    
+    img {
+        border-radius: 10px;
+    }
+    
+    .button {
+        float: right;
+        margin-top: 120px;
+    }
+    
+    button a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 550;
+    }
+    
+    button {
+        margin-right: 40px;
+        padding: 10px 20px;
+        background-color: red;
+        font-size: 18px;
+        color: #fff;
+        border-radius: 10px;
+        font-weight: 550;
+        float: right;
+    }
+</style>
+
+<body>
+    <button><a href="khhocvien.html">Thoát</a></button>
+    <h1>Đăng Ký Khóa Học</h1>
+    <div class="main">
+
+        <div class="main1">
+            <h2>HTML, CSS từ Zero đến Hero</h2>
+            <p>
+                Trong khóa này chúng ta sẽ cùng nhau xây dựng giao diện 2 trang web là The Band & Shopee.
+            </p>
+            <h3>Bạn sẽ học được gì</h3>
+            <p>&#128308; Biết cách xây dựng giao diện web với HTML, CSS</p>
+            <p>&#128308; Biết cách phân tích giao diện website</p>
+            <p>&#128308; Biết cách đặt tên class CSS theo chuẩn BEM</p>
+            <p>&#128308; Biết cách làm giao diện web responsive</p>
+            <p>&#128308; Làm chủ Flexbox khi dựng bố cục website</p>
+            <p>&#128308; Sở hữu 2 giao diện web khi học xong khóa học</p>
+            <p>&#128308; Biết cách tự tạo động lực cho bản thân</p>
+            <p>&#128308; Biết cách tự học những kiến thức mới</p>
+        </div>
+        <div class="main2">
+            <img src="course1.png" alt="">
+            <div class="button">
+                <button onclick="testConfirmDialog()">Đăng Ký</button>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        function testConfirmDialog() {
+
+            var result = confirm("Bạn muốn đăng ký khóa học này không?");
+
+            if (result) {
+                alert("Bạn đăng ký thành công!");
+            } else {
+                alert("Bạn đăng ký thất bại!");
+            }
+        }
+    </script>
+</body>
+
+</html>

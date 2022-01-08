@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Khóa Học</title>
+</head>
+<style>
+    h1 {
+        color: red;
+        text-align: center;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(11, 253, 241), 0 0 5px rgb(97, 255, 6);
+    }
+    
+    form {
+        margin: 20px 400px 50px;
+        border: blue 3px solid;
+        border-color: #fff red green blue;
+        padding: 50px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(rgb(255, 255, 255), rgba(250, 129, 108, 0.993)), url('../../img/login0.jpg');
+        border-radius: 10px;
+    }
+    
+    body {
+        background-image: linear-gradient(rgb(255, 255, 255), rgba(158, 245, 150, 0.993)), url('../../img/login0.jpg');
+    }
+    
+    form input,
+    textarea {
+        float: right;
+        margin-bottom: 15px;
+        font-size: 17px;
+    }
+    
+    form label {
+        float: left;
+        margin-bottom: 25px;
+        font-size: 18px;
+        font-weight: 550;
+    }
+    
+    button {
+        font-size: 16px;
+        padding: 7px;
+        margin-left: 270px;
+        color: rgb(255, 255, 255);
+        background-color: blue;
+        margin-top: 7px;
+    }
+    
+    .header a {
+        float: right;
+        padding: 10px 15px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(19, 15, 255);
+        text-decoration: none;
+        margin: 30px;
+        border-radius: 5px;
+        background: red 2px solid;
+        font-weight: 550;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <a href="khoahoc.html">Thoát ></a>
+        <h1>Thêm Khóa Học Mới</h1>
+
+    </div>
+    <form action="">
+
+        <div class="row">
+            <label for="">Tên Khóa Học</label>
+            <input type="text">
+        </div>
+        <div class="row">
+            <label for="">Nội Dung</label>
+            <textarea name="message" rows="10" cols="21"></textarea>
+        </div>
+        <div class="row">
+            <label for="">Tên Giảng Viên</label>
+            <input type="text">
+        </div>
+        <div class="row">
+            <label for="">Giá Tiền</label>
+            <input type="text">
+        </div>
+        <div class="row">
+            <label for="">Ảnh</label>
+            <input type="text">
+
+        </div>
+        <button onclick="testConfirmDialog()">Thêm</button>
+
+
+
+    </form>
+    <script>
+        function testConfirmDialog() {
+
+            var result = confirm("Bạn muốn thêm khóa học này?");
+
+            if (result) {
+                alert("Bạn thêm thành công!");
+            } else {
+                alert("Bạn thêm thất bại!");
+            }
+        }
+    </script>
+</body>
+
+</html>

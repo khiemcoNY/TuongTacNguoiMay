@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lich Giảng Dạy</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        color: red;
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(2, 255, 65), 0 0 5px rgb(97, 255, 6);
+    }
+    
+    button a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 550;
+    }
+    
+    button {
+        margin-right: 40px;
+        padding: 10px 20px;
+        background-color: red;
+        font-size: 18px;
+        color: #fff;
+        border-radius: 10px;
+        font-weight: 550;
+    }
+    
+    form option,
+    label,
+    select {
+        font-size: 18px;
+        padding: 5px;
+        margin-left: 78px;
+    }
+    
+    form label {
+        font-size: 20px;
+        font-weight: 550;
+    }
+    
+    form {
+        margin: 100px;
+    }
+    
+    #tracuu {
+        margin-left: 25px;
+        padding: 7px 15px;
+        background-color: rgb(70, 255, 162);
+        color: rgb(251, 0, 0);
+    }
+    
+    .table {
+        margin: 40px 80px;
+    }
+    
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    
+    td {
+        color: rgb(2, 2, 255);
+    }
+</style>
+
+<body>
+    <button style=" float: right;"><a href="giangvien.html">Thoát</a></button>
+    <h1>Tra Cứu Lịch Giảng Dạy</h1>
+    <form action="" method="">
+        <label for="">Tuần</label>
+        <br>
+        <select>
+        <option value="" selected>Tuần thứ 1
+            (10/1/2022 - 16/1/2022)</option>
+        <option value="">Tuần thứ 2
+            (17/1/2022 - 23/1/2022)</option>
+        <option value="">Tuần thứ 3
+            (24/1/2022 - 30/1/2022)</option>
+        <option value="">Tuần thứ 4
+            (31/1/2022 - 6/2/2022)</option>
+        <option value="">Tuần thứ 5
+            (7/2/2022 - 13/2/2022)</option>
+        <option value="">Tuần thứ 6
+            (14/2/2022 - 20/2/2022)</option>
+        <option value="">Tuần thứ 7
+            (21/2/2022 - 27/2/2022)</option>
+        
+        </select>
+        <button id="tracuu" onclick="thongbao()">Tra Cứu</button>
+        <div class="table">
+
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Thứ 2</th>
+                    <th>Thứ 3</th>
+                    <th>Thứ 4</th>
+                    <th>Thứ 5</th>
+                    <th>Thứ 6</th>
+                    <th>Thứ 7</th>
+                    <th>Chủ Nhật</th>
+
+                </tr>
+                <tr>
+                    <td style="color:black">Tiết 1 (7:00 -> 7:50)
+                    </td>
+                    <td>HTML, CSS 419-A2</td>
+                    <td>Reponsive 419-A2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="color:black">Tiết 2 (7:55 -> 8:45)
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>JavaScrip 419-A2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="color:black">Tiết 3 (8:50 -> 9:40)
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Reponsive 419-A2</td>
+                    <td></td>
+                    <td>Kiến Thức Nền Tảng 419-A2</td>
+                </tr>
+                <tr>
+                    <td style="color:black">Tiết 4 (9:45 -> 10:35)
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Reponsive 419-A2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+                <tr>
+                    <td style="color:black">Tiết 5 (10:40 -> 11:30)
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>Reponsive 419-A2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="color:black">Tiết 6 (11:35 -> 12:25)
+                    </td>
+                    <td></td>
+                    <td>Reponsive 419-A2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Reponsive 419-A2</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="color:black">Tiết 7 (12:55 -> 13:45)
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>JavaScrip 419-A2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="color:black">Tiết 8 (13:50 -> 14:40)
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>JavaScrip 419-A2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="color:black">Tiết 9 (14:45 -> 15:35)</td>
+                    <td></td>
+                    <td></td>
+                    <td>Reponsive 419-A2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td style="color:black">...</td>
+                    <td></td>
+                    <td></td>
+                    <td>JavaScrip 419-A2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <script>
+        function thongbao() {
+            alert("Đã tìm thấy lịch giảng dạy của bạn!")
+        }
+    </script>
+</body>
+
+</html>
